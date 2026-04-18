@@ -92,7 +92,7 @@ else:
         
         if p >= 4:
             st.header("🎊 FELICIDADES NEGRITA, TE GANASTE MI CORAZON")
-            st.image("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJpZzR6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/l41lTfux7uK+Z0wBW/giphy.gif")
+            st.image("kitty.gif", use_container_width=True)
         
         elif p in [2, 3]:
             st.header("🧸 Muy Bien Niñita")
