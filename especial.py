@@ -52,7 +52,7 @@ else:
     if st.session_state.paso == 'animacion':
         st.balloons() # Simulación de mariposas/vuelo
         st.markdown("<h1 style='text-align: center;'>🦋 ❤️ 🦋</h1>", unsafe_allow_html=True)
-        st.markdown("<h1 style='text-align: center; font-size: 50px;'>Te Amo mi Negrita</h1>", unsafe_allow_html=True)
+        st.markdown("<h1 style='text-align: center; font-size: 50px;'>Te Amo mi Vida</h1>", unsafe_allow_html=True)
         
         # Imagen de Hello Kitty
         try:
