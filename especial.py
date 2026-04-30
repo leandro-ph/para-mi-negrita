@@ -3,7 +3,7 @@ import streamlit as st
 import time
 
 # 1. Configuración visual (Estilo Hello Kitty / Amor)
-st.set_page_config(page_title="Para mi Negrita", page_icon="💖")
+st.set_page_config(page_title="💖Para mi Vida💖", page_icon="💖")
 
 st.markdown("""
     <style>
@@ -35,7 +35,7 @@ if not st.session_state.autenticado:
     password = st.text_input("Contraseña", type="password")
     
     if st.button("Entrar 💖"):
-        if user == "lulu69" and password == "JulianPingon":
+        if user == "JulianCito" and password == "JulianCito":
             st.session_state.autenticado = True
             st.rerun()
         else:
@@ -68,18 +68,18 @@ else:
     elif st.session_state.paso == 'cuestionario':
         st.title("💘 ¿Cuánto conoces a tu amor?")
         
-        q1 = st.text_input("1. ¿De dónde es el amor de tu vida?").strip().lower()
+        q1 = st.text_input("1. ¿En que año nacio el amor de tu vida?").strip().lower()
         q2 = st.text_input("2. ¿Qué edad tiene el amor de tu vida?")
         q3 = st.text_input("3. ¿Cómo se llama el amor de tu vida?").strip().capitalize()
-        q4 = st.text_input("4. ¿Cuánto le mide al amor de tu vida?")
-        q5 = st.radio("5. ¿Tendrías sexo con el amor de tu vida?", ("Selecciona", "si", "no"))
+        q4 = st.text_input("4. ¿Cuándo conociste al amor de tu vida?")
+        q5 = st.radio("5. ¿Estarias con el amor de tu vida?", ("Selecciona", "si", "no"))
 
         if st.button("Enviar respuestas 💌"):
             puntos = 0
-            if q1 == "lima": puntos += 1
+            if q1 == "2008": puntos += 1
             if q2 == "18": puntos += 1
             if q3 in ["Julian", "Leandro"]: puntos += 1
-            if "16" in q4: puntos += 1
+            if "2022" in q4: puntos += 1
             if q5 == "si": puntos += 1
             
             st.session_state.puntos = puntos
@@ -91,7 +91,7 @@ else:
         p = st.session_state.puntos
         
         if p >= 4:
-            st.header("🎊 FELICIDADES NEGRITA, TE GANASTE MI CORAZON")
+            st.header("🎊 FELICIDADES, TE GANASTE MI CORAZON")
             st.image("kitty.gif", use_container_width=True)
         
         elif p in [2, 3]:
